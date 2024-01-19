@@ -62,3 +62,59 @@
 - **Staging Changes**: Use `git add`.
 - **Committing Changes**: `git commit -m "Your message"`.
 - **Pushing to GitHub**: `git push`.
+
+### Branching and Merging
+
+
+1. **Create and Switch to the New Branch**
+   Use the following command to create and switch to your new branch:
+   ```bash
+   git branch new-branch-name
+   git checkout new-branch-name
+   ```
+   Replace `new-branch-name` with your desired branch name.
+
+2. **Make Your Changes**
+   Edit, add, or delete files in your project as needed.
+
+3. **Stage Your Changes for Commit**
+   ```bash
+   git add .
+   ```
+   This command stages all your changes for the next commit.
+
+4. **Commit the Changes**
+   ```bash
+   git commit -m "Describe your changes"
+   ```
+   Replace `Describe your changes` with a message describing what changes you've made.
+
+5. **Push the New Branch to the Remote Repository**
+   ```bash
+   git push -u origin new-branch-name
+   ```
+   Replace `new-branch-name` with the name of your new branch.
+
+6. **Switch to the Main Branch**
+   ```bash
+   git checkout main
+   ```
+
+7. **Pull the Latest Changes from Main**
+   ```bash
+   git pull origin main
+   ```
+   This ensures you have the latest changes from the remote main branch.
+
+8. **Merge the New Branch into Main**
+   ```bash
+   git merge new-branch-name
+   ```
+   Replace `new-branch-name` with your branch's name. Resolve any merge conflicts if they arise.
+
+9. **Push the Merged Changes to Remote**
+   ```bash
+   git push origin main
+   ```
+
+Remember to replace `new-branch-name` and `main` with the actual names of your branches. This guide will help you create a new branch, make commits, and merge it back into the main branch.
